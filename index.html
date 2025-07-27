@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nodo San Miguel| Soluciones Tecnológicas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-[Inter]">
+
+  <!-- Encabezado con logo -->
+  <header class="bg-white shadow-md py-4 px-6 flex items-center justify-between">
+    <img src="/mnt/data/logo.png" width="200" height="100" alt="logo">
+
+    <!-- Botón mobile -->
+    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <!-- Navegación -->
+    <nav id="menu" class="space-y-4 md:space-y-0 md:space-x-6 absolute md:static top-16 left-0 w-full md:w-auto bg-white px-6 py-4 md:py-0 hidden md:flex flex-col md:flex-row shadow md:shadow-none z-10">
+      <a href="#servicios" class="text-gray-700 hover:text-blue-600 font-semibold">Servicios</a>
+      <a href="#planes" class="text-gray-700 hover:text-blue-600 font-semibold">Planes</a>
+      <a href="#contacto" class="text-gray-700 hover:text-blue-600 font-semibold">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-blue-50 py-20 text-center px-4">
+    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Automatizá procesos y ahorrá tiempo</h1>
+    <p class="text-lg md:text-xl mb-6">Desarrollo de herramientas a medida para tu negocio o profesión.</p>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxUjbBo0mdfPe_5GaJ-6Ft6mx--u1WfK1bQtLGAt8ZnGwMLA/viewform?usp=dialog" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow">Solicitar presupuesto</a>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="py-16 px-4 md:px-6 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-12">Servicios que ofrecemos</h2>
+    <div class="grid md:grid-cols-2 gap-10">
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-xl font-bold mb-2">Automatización de Excel / CSV</h3>
+        <p>$8.000 – $15.000</p>
+        <p class="text-sm text-gray-600 mt-2">Filtrados, resúmenes, limpieza de datos y más.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-xl font-bold mb-2">Presupuestos / Reportes automáticos</h3>
+        <p>$10.000 – $18.000</p>
+        <p class="text-sm text-gray-600 mt-2">Plantillas con salida en PDF o Excel desde datos ingresados.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-xl font-bold mb-2">Organización de archivos con Python</h3>
+        <p>$6.000 – $12.000</p>
+        <p class="text-sm text-gray-600 mt-2">Orden automático de carpetas. Útil para contadores, fotógrafos, etc.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-xl font-bold mb-2">Scraping de datos web</h3>
+        <p>$12.000 – $20.000</p>
+        <p class="text-sm text-gray-600 mt-2">Extracción de precios, publicaciones, noticias, etc.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-xl font-bold mb-2">Bots para WhatsApp / Telegram</h3>
+        <p>$15.000 – $25.000</p>
+        <p class="text-sm text-gray-600 mt-2">Automatización de respuestas, envíos programados y más.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow">
+        <h3 class="text-xl font-bold mb-2">Envíos automáticos</h3>
+        <p>$10.000 – $18.000</p>
+        <p class="text-sm text-gray-600 mt-2">Programación de envíos de mensajes por horario o evento.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Planes mensuales -->
+  <section id="planes" class="bg-green-50 py-16 px-4 md:px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6">Suscripción mensual</h2>
+      <p class="mb-4">¿Necesitás soporte o desarrollos continuos? Contratá nuestro plan mensual desde <span class="font-semibold">$80.000</span>.</p>
+      <p class="mb-6 text-sm text-gray-600">Incluye automatizaciones, scraping, reportes, soporte y más.</p>
+      <a href="https://mpago.la/2frM4k2" class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg shadow">Quiero suscribirme</a>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="py-16 px-4 md:px-6 max-w-3xl mx-auto">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9voHK4XeatE2JlEghGtJb4WKYxOWhF04PVU7WkR0GjFcaAA/viewform?embedded=true" width="100%" height="2588" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-6 text-center text-sm text-gray-500">
+    © 2025 Nodo San Miguel. Todos los derechos reservados.
+  </footer>
+
+  <!-- Script para el menú móvil -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
