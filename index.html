@@ -1,250 +1,89 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nodo San Miguel | Soluciones Tecnológicas</title>
-  <link rel="icon" type="image/svg+xml" href="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/computer.svg">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nodo San Miguel | Soluciones Tecnológicas</title>
+<link href="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/6.x/svgs/solid/computer.svg" rel="icon" type="image/svg+xml"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/></head>
 <body class="bg-gray-50 text-gray-800 font-[Inter]">
-
-  <!-- Encabezado -->
-  <header class="bg-white shadow-md py-4 px-6 flex items-center justify-between relative">
-    <img src="mnt/data/logo.png" width="200" height="100" alt="logo">
-    <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-        viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </button>
-    <nav id="menu" class="hidden absolute top-full left-0 w-full bg-white md:static md:flex md:space-x-6 md:space-y-0 md:w-auto shadow-md md:shadow-none md:bg-transparent md:flex-row flex flex-col space-y-4 md:space-y-0 px-6 py-4 md:py-0 z-10">
-      <a href="#servicios" class="text-gray-700 hover:text-blue-600 font-semibold">Servicios</a>
-      <a href="#planes" class="text-gray-700 hover:text-blue-600 font-semibold">Planes</a>
-      <a href="#contacto" class="text-gray-700 hover:text-blue-600 font-semibold">Contacto</a>
-    </nav>
-  </header>
-
-  <!-- Hero -->
-  <section class="bg-blue-50 py-20 text-center px-4">
-    <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Automatizá procesos y ahorrá tiempo</h1>
-    <p class="text-lg md:text-xl mb-6">Desarrollo de herramientas a medida para tu negocio o profesión.</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxUjbBo0mdfPe_5GaJ-6Ft6mx--u1WfK1bQtLGAt8ZnGwMLA/viewform?usp=dialog" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow">Solicitar presupuesto</a>
-  </section>
-  <section class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Servicios profesionales</h2>
-      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <!-- Tfactura -->
-        <div class="bg-gray-100 p-6 rounded-lg shadow">
-          <img src="https://i.imgur.com/h5iSm0z.png" alt="Tfactura.io logo" class="h-12 mb-4">
-          <h3 class="text-xl font-semibold mb-2">Tfactura.io</h3>
-          <p class="text-gray-700 mb-4">Somos partners oficiales. Brindamos implementación, capacitación y asesoría.</p>
-          <span class="inline-block bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Consultar precios</span>
-        </div>
-        <!-- Gestión Center -->
-        <div class="bg-gray-100 p-6 rounded-lg shadow">
-          <img src="https://i.imgur.com/4nG5uRo.png" alt="Gestión Center logo" class="h-12 mb-4">
-          <h3 class="text-xl font-semibold mb-2">Gestión Center Cloud</h3>
-          <p class="text-gray-700 mb-4">Implementación, configuración y capacitación del sistema para empresas.</p>
-          <span class="inline-block bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Consultar precios</span>
-        </div>
-        <!-- Micrositios tipo Linktree -->
-        <div class="bg-gray-100 p-6 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2">Micrositios con tus links</h3>
-          <p class="text-gray-700 mb-4">Diseñamos micrositios estilo link.tree con tu branding y estructura personalizada.</p>
-          <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Desde $6.000</span>
-        </div>
-        <!-- Webs gratuitas para ONGs -->
-        <div class="bg-gray-100 p-6 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2">Sitios web gratuitos</h3>
-          <p class="text-gray-700 mb-4">Diseñamos sitios institucionales sin costo para organizaciones sociales y voluntariados.</p>
-          <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">100% Gratis</span>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2">Micrositios con tus links</h3>
-          <p class="text-gray-700 mb-4">Diseñamos micrositios estilo link.tree con tu branding y estructura personalizada.</p>
-          <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Desde $6.000</span>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2">Micrositios con tus links</h3>
-          <p class="text-gray-700 mb-4">Diseñamos micrositios estilo link.tree con tu branding y estructura personalizada.</p>
-          <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Desde $6.000</span>
-        </div>
-        <div class="bg-gray-100 p-6 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2">Micrositios con tus links</h3>
-          <p class="text-gray-700 mb-4">Diseñamos micrositios estilo link.tree con tu branding y estructura personalizada.</p>
-          <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Desde $6.000</span>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-  
-  <!-- Servicios -->
-  <section id="servicios" class="py-16 px-4 md:px-6 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-12">Servicios que ofrecemos</h2>
-    <div class="grid md:grid-cols-2 gap-10">
-      
-      <!-- Automatización Excel/CSV -->
-      <div class="bg-white p-6 rounded-xl shadow text-center">
-        <svg class="w-16 h-16 mx-auto mb-4 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <rect x="3" y="3" width="18" height="18" rx="2"></rect>
-          <path d="M8 3v18M3 8h18"></path>
-          <path d="M12 8l3 3m0-3l-3 3"></path>
-        </svg>
-        <h3 class="text-xl font-bold mb-2">Automatización de Excel / CSV</h3>
-        <p>$8.000 – $15.000</p>
-        <p class="text-sm text-gray-600 mt-2">Filtrados, resúmenes, limpieza de datos y más.</p>
-      </div>
-
-      <!-- Reportes automáticos -->
-      <div class="bg-white p-6 rounded-xl shadow text-center">
-        <svg class="w-16 h-16 mx-auto mb-4 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M4 5h16M4 9h16M4 13h16M4 17h16"></path>
-          <rect x="4" y="5" width="16" height="14" rx="2"></rect>
-        </svg>
-        <h3 class="text-xl font-bold mb-2">Presupuestos / Reportes automáticos</h3>
-        <p>$10.000 – $18.000</p>
-        <p class="text-sm text-gray-600 mt-2">Salidas en PDF o Excel desde datos ingresados.</p>
-      </div>
-
-      <!-- Organización con Python -->
-      <div class="bg-white p-6 rounded-xl shadow text-center">
-        <svg class="w-16 h-16 mx-auto mb-4 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M4 4h16v16H4z"></path>
-          <path d="M8 8h8M8 12h8M8 16h8"></path>
-        </svg>
-        <h3 class="text-xl font-bold mb-2">Organización de archivos con Python</h3>
-        <p>$6.000 – $12.000</p>
-        <p class="text-sm text-gray-600 mt-2">Orden automático de carpetas para contadores, fotógrafos, etc.</p>
-      </div>
-
-      <!-- Scraping web -->
-      <div class="bg-white p-6 rounded-xl shadow text-center">
-        <svg class="w-16 h-16 mx-auto mb-4 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <circle cx="11" cy="11" r="8"></circle>
-          <line x1="16" y1="16" x2="21" y2="21"></line>
-        </svg>
-        <h3 class="text-xl font-bold mb-2">Scraping de datos web</h3>
-        <p>$12.000 – $20.000</p>
-        <p class="text-sm text-gray-600 mt-2">Extracción de precios, publicaciones, noticias, etc.</p>
-      </div>
-
-      <!-- Bots WhatsApp/Telegram -->
-      <div class="bg-white p-6 rounded-xl shadow text-center">
-        <svg class="w-16 h-16 mx-auto mb-4 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M17 8h2a2 2 0 012 2v6l-3-3h-1"></path>
-          <path d="M7 8H5a2 2 0 00-2 2v6l3-3h1"></path>
-          <circle cx="12" cy="12" r="9"></circle>
-        </svg>
-        <h3 class="text-xl font-bold mb-2">Bots para WhatsApp / Telegram</h3>
-        <p>$15.000 – $25.000</p>
-        <p class="text-sm text-gray-600 mt-2">Automatización de respuestas y envíos programados.</p>
-      </div>
-
-      <!-- Envíos automáticos -->
-      <div class="bg-white p-6 rounded-xl shadow text-center">
-        <svg class="w-16 h-16 mx-auto mb-4 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M2 12h20"></path>
-          <polygon points="20,6 24,12 20,18 20,6"></polygon>
-        </svg>
-        <h3 class="text-xl font-bold mb-2">Envíos automáticos</h3>
-        <p>$10.000 – $18.000</p>
-        <p class="text-sm text-gray-600 mt-2">Mensajes programados por horario o evento.</p>
-      </div>
-
-      <!-- Diseño web -->
-      <div class="bg-white p-6 rounded-xl shadow text-center">
-        <svg class="w-16 h-16 mx-auto mb-4 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <rect x="3" y="4" width="18" height="16" rx="2"></rect>
-          <line x1="3" y1="10" x2="21" y2="10"></line>
-        </svg>
-        <h3 class="text-xl font-bold mb-2">Diseño web</h3>
-        <p>Consultar cotización</p>
-        <p class="text-sm text-gray-600 mt-2">Sitios institucionales, landing pages y más.</p>
-      </div>
-
-      <!-- Soporte Tango -->
-      <div class="bg-white p-6 rounded-xl shadow text-center">
-        <svg class="w-16 h-16 mx-auto mb-4 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <path d="M4 4h16v16H4z"></path>
-          <path d="M8 9h8M8 13h8"></path>
-        </svg>
-        <h3 class="text-xl font-bold mb-2">Soporte de Tango Gestión</h3>
-        <p>$15.000 – $30.000</p>
-        <p class="text-sm text-gray-600 mt-2">Asistencia técnica y automatizaciones para Tango.</p>
-      </div>
-
-      <!-- Administración Google -->
-      <div class="bg-white p-6 rounded-xl shadow text-center">
-        <svg class="w-16 h-16 mx-auto mb-4 text-gray-800" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-          <circle cx="12" cy="7" r="4"></circle>
-          <path d="M5.5 20a6.5 6.5 0 0113 0"></path>
-        </svg>
-        <h3 class="text-xl font-bold mb-2">Administración de cuentas de Google</h3>
-        <p>$10.000 – $20.000</p>
-        <p class="text-sm text-gray-600 mt-2">Gmail, Drive, calendarios y configuración avanzada.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Planes mensuales -->
-  <section id="planes" class="bg-green-50 py-16 px-4 md:px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6">Suscripción mensual</h2>
-      <div class="grid md:grid-cols-3 gap-8 text-left">
-        <div class="bg-white p-6 rounded-xl shadow text-center">
-          <p class="text-2xl font-bold mb-2">$80.000</p>
-          <p class="text-gray-600 mb-4">Hasta 5 trabajos por mes</p>
-          <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=1dde140d62de4f54b8be8788ada8e58c" class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg shadow">Suscribirme</a>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow text-center">
-          <p class="text-2xl font-bold mj
-          <p class="text-2xl font-bold mb-2">$150.000</p>
-          <p class="text-gray-600 mb-4">Hasta 10 trabajos por mes</p>
-          <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=a66e2e6bd7da4d1b9ed26695bdcbaa6e" class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg shadow">Suscribirme</a>
-        </div>
-        <div class="bg-white p-6 rounded-xl shadow text-center">
-          <p class="text-2xl font-bold mb-2">$200.000</p>
-          <p class="text-gray-600 mb-4">Trabajos ilimitados por mes</p>
-          <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=e068c1b9c0414b649a3c6e650be5af09" class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg shadow">Suscribirme</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contacto -->
-  <section id="contacto" class="py-16 px-4 md:px-6 max-w-3xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-4">Contacto</h2>
-    <p class="text-lg text-gray-700 mb-6">Si tenés alguna duda o querés hacer una consulta especial, escribinos directamente.</p>
-    <a href="mailto:contacto@nodosm.com" class="text-blue-600 hover:underline text-lg font-semibold">contacto@nodosm.com</a>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9voHK4XeatE2JlEghGtJb4WKYxOWhF04PVU7WkR0GjFcaAA/viewform?embedded=true" width="100%" height="2588" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-  </section>
-
-  <!-- Ícono flotante de WhatsApp -->
-   <a href="https://wa.me/5491122546422" target="_blank" class="fixed bottom-5 right-5 z-50">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="w-14 h-14 hover:scale-105 transition-transform drop-shadow-lg" />
-  </a>
-  <!-- Footer -->
-  <!-- Footer -->
+<!-- Encabezado -->
+<header class="bg-white shadow-md py-4 px-6 flex items-center justify-between relative">
+<img alt="logo" height="100" src="mnt/data/logo.png" width="200"/>
+<button class="md:hidden text-gray-700 focus:outline-none" id="menu-toggle">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<path d="M4 6h16M4 12h16M4 18h16"></path>
+</svg>
+</button>
+<nav class="hidden absolute top-full left-0 w-full bg-white md:static md:flex md:space-x-6 md:space-y-0 md:w-auto shadow-md md:shadow-none md:bg-transparent md:flex-row flex flex-col space-y-4 md:space-y-0 px-6 py-4 md:py-0 z-10" id="menu">
+<a class="text-gray-700 hover:text-blue-600 font-semibold" href="#servicios">Servicios</a>
+<a class="text-gray-700 hover:text-blue-600 font-semibold" href="#planes">Planes</a>
+<a class="text-gray-700 hover:text-blue-600 font-semibold" href="#contacto">Contacto</a>
+</nav>
+</header>
+<!-- Hero -->
+<section class="bg-blue-50 py-20 text-center px-4">
+<h1 class="text-4xl md:text-5xl font-extrabold mb-4">Automatizá procesos y ahorrá tiempo</h1>
+<p class="text-lg md:text-xl mb-6">Desarrollo de herramientas a medida para tu negocio o profesión.</p>
+<a class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg shadow" href="https://docs.google.com/forms/d/e/1FAIpQLSdxUjbBo0mdfPe_5GaJ-6Ft6mx--u1WfK1bQtLGAt8ZnGwMLA/viewform?usp=dialog">Solicitar presupuesto</a>
+</section>
+<!-- Servicios -->
+<section class="py-16 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-3xl font-extrabold text-gray-900 mb-8">Servicios que ofrecemos</h2>
+<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+<div class="bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"><i class="fa-solid fa-file-excel text-indigo-600 text-3xl mb-4 block"></i><h3 class="text-lg font-bold text-gray-800 mb-2">Automatización de Excel / CSV</h3><p class="text-sm text-indigo-600 font-semibold mb-2">$8.000 – $15.000</p><p class="text-sm text-gray-700">Filtrados, resúmenes, limpieza de datos y más.</p></div><div class="bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"><i class="fa-solid fa-file-invoice-dollar text-indigo-600 text-3xl mb-4 block"></i><h3 class="text-lg font-bold text-gray-800 mb-2">Presupuestos / Reportes automáticos</h3><p class="text-sm text-indigo-600 font-semibold mb-2">$10.000 – $18.000</p><p class="text-sm text-gray-700">Salidas en PDF o Excel desde datos ingresados.</p></div><div class="bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"><i class="fa-solid fa-folder-open text-indigo-600 text-3xl mb-4 block"></i><h3 class="text-lg font-bold text-gray-800 mb-2">Organización de archivos con Python</h3><p class="text-sm text-indigo-600 font-semibold mb-2">$6.000 – $12.000</p><p class="text-sm text-gray-700">Orden automático de carpetas para contadores, fotógrafos, etc.</p></div><div class="bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"><i class="fa-solid fa-magnifying-glass text-indigo-600 text-3xl mb-4 block"></i><h3 class="text-lg font-bold text-gray-800 mb-2">Scraping de datos web</h3><p class="text-sm text-indigo-600 font-semibold mb-2">$12.000 – $20.000</p><p class="text-sm text-gray-700">Extracción de precios, publicaciones, noticias, etc.</p></div><div class="bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"><i class="fa-solid fa-robot text-indigo-600 text-3xl mb-4 block"></i><h3 class="text-lg font-bold text-gray-800 mb-2">Bots para WhatsApp / Telegram</h3><p class="text-sm text-indigo-600 font-semibold mb-2">$15.000 – $25.000</p><p class="text-sm text-gray-700">Automatización de respuestas y envíos programados.</p></div><div class="bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"><i class="fa-solid fa-paper-plane text-indigo-600 text-3xl mb-4 block"></i><h3 class="text-lg font-bold text-gray-800 mb-2">Envíos automáticos</h3><p class="text-sm text-indigo-600 font-semibold mb-2">$10.000 – $18.000</p><p class="text-sm text-gray-700">Mensajes programados por horario o evento.</p></div><div class="bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"><i class="fa-solid fa-laptop-code text-indigo-600 text-3xl mb-4 block"></i><h3 class="text-lg font-bold text-gray-800 mb-2">Diseño web</h3><p class="text-sm text-indigo-600 font-semibold mb-2">Consultar cotización</p><p class="text-sm text-gray-700">Sitios institucionales, landing pages y más.</p></div><div class="bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"><img class="h-10 w-10 object-contain mb-4" src="assets/logos/tango.png"/><h3 class="text-lg font-bold text-gray-800 mb-2">Soporte de Tango Gestión</h3><p class="text-sm text-indigo-600 font-semibold mb-2">$15.000 – $30.000</p><p class="text-sm text-gray-700">Asistencia técnica y automatizaciones para Tango.</p></div><div class="bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"><img class="h-10 w-10 object-contain mb-4" src="https://cdn-icons-png.flaticon.com/512/281/281764.png"/><h3 class="text-lg font-bold text-gray-800 mb-2">Administración de cuentas de Google</h3><p class="text-sm text-indigo-600 font-semibold mb-2">$10.000 – $20.000</p><p class="text-sm text-gray-700">Gmail, Drive, calendarios y configuración avanzada.</p></div><div class="bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"><img class="h-10 w-10 object-contain mb-4" src="assets/logos/tfactura.png"/><h3 class="text-lg font-bold text-gray-800 mb-2">Partner oficial Tfactura.io</h3><p class="text-sm text-indigo-600 font-semibold mb-2">Consultar precios</p><p class="text-sm text-gray-700">Implementación, capacitación y asesoría para empresas.</p></div><div class="bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"><img class="h-10 w-10 object-contain mb-4" src="assets/logos/gestioncenter.png"/><h3 class="text-lg font-bold text-gray-800 mb-2">Partner oficial Gestión Center Cloud</h3><p class="text-sm text-indigo-600 font-semibold mb-2">Consultar precios</p><p class="text-sm text-gray-700">Puesta en marcha y configuración del sistema en la nube.</p></div><div class="bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"><i class="fa-solid fa-link text-indigo-600 text-3xl mb-4 block"></i><h3 class="text-lg font-bold text-gray-800 mb-2">Micrositios personalizados (tipo Linktree)</h3><p class="text-sm text-indigo-600 font-semibold mb-2">Desde $6.000</p><p class="text-sm text-gray-700">Unificá todos tus links en un solo micrositio con tu identidad visual.</p></div><div class="bg-gray-50 border border-gray-200 p-6 rounded-xl shadow-sm hover:shadow-md transition-all duration-300"><i class="fa-solid fa-hand-holding-heart text-indigo-600 text-3xl mb-4 block"></i><h3 class="text-lg font-bold text-gray-800 mb-2">Webs gratuitas para ONGs y voluntariados</h3><p class="text-sm text-indigo-600 font-semibold mb-2">100% Gratis</p><p class="text-sm text-gray-700">Sitios institucionales sin costo para causas sociales.</p></div></div>
+</div>
+</section>
+<!-- Planes mensuales -->
+<section class="bg-green-50 py-16 px-4 md:px-6" id="planes">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-3xl font-bold mb-6">Suscripción mensual</h2>
+<div class="grid md:grid-cols-3 gap-8 text-left">
+<div class="bg-white p-6 rounded-xl shadow text-center">
+<p class="text-2xl font-bold mb-2">$80.000</p>
+<p class="text-gray-600 mb-4">Hasta 5 trabajos por mes</p>
+<a class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg shadow" href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=1dde140d62de4f54b8be8788ada8e58c">Suscribirme</a>
+</div>
+<div class="bg-white p-6 rounded-xl shadow text-center">
+<p class="text-2xl font-bold mj &lt;p class=" font-bold="" mb-2"="" text-2xl="">$150.000</p>
+<p class="text-gray-600 mb-4">Hasta 10 trabajos por mes</p>
+<a class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg shadow" href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=a66e2e6bd7da4d1b9ed26695bdcbaa6e">Suscribirme</a>
+</div>
+<div class="bg-white p-6 rounded-xl shadow text-center">
+<p class="text-2xl font-bold mb-2">$200.000</p>
+<p class="text-gray-600 mb-4">Trabajos ilimitados por mes</p>
+<a class="inline-block bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded-lg shadow" href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=e068c1b9c0414b649a3c6e650be5af09">Suscribirme</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Contacto -->
+<section class="py-16 px-4 md:px-6 max-w-3xl mx-auto text-center" id="contacto">
+<h2 class="text-3xl font-bold mb-4">Contacto</h2>
+<p class="text-lg text-gray-700 mb-6">Si tenés alguna duda o querés hacer una consulta especial, escribinos directamente.</p>
+<a class="text-blue-600 hover:underline text-lg font-semibold" href="mailto:contacto@nodosm.com">contacto@nodosm.com</a>
+<iframe frameborder="0" height="2588" marginheight="0" marginwidth="0" src="https://docs.google.com/forms/d/e/1FAIpQLSf9voHK4XeatE2JlEghGtJb4WKYxOWhF04PVU7WkR0GjFcaAA/viewform?embedded=true" width="100%">Cargando…</iframe>
+</section>
+<!-- Ícono flotante de WhatsApp -->
+<a class="fixed bottom-5 right-5 z-50" href="https://wa.me/5491122546422" target="_blank">
+<img alt="WhatsApp" class="w-14 h-14 hover:scale-105 transition-transform drop-shadow-lg" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"/>
+</a>
+<!-- Footer -->
+<!-- Footer -->
 <!-- Footer -->
 <!-- Footer -->
 <footer class="bg-gray-100 py-6 text-center text-sm text-gray-500 relative">
-  <a href="http://qr.afip.gob.ar/?qr=GdBhU78grSnJW3rAHvCHow,," target="_F960AFIPInfo"
-     class="absolute bottom-2 left-4">
-    <img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" alt="AFIP 960/D" style="width: 80px;" />
-  </a>
-  <span>© 2025 Nodo San Miguel. Todos los derechos reservados.</span>
+<a class="absolute bottom-2 left-4" href="http://qr.afip.gob.ar/?qr=GdBhU78grSnJW3rAHvCHow,," target="_F960AFIPInfo">
+<img alt="AFIP 960/D" src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" style="width: 80px;"/>
+</a>
+<span>© 2025 Nodo San Miguel. Todos los derechos reservados.</span>
 </footer>
-
-
-
-  <!-- Script del menú -->
-  <script>
+<!-- Script del menú -->
+<script>
     const menuToggle = document.getElementById('menu-toggle');
     const menu = document.getElementById('menu');
 
@@ -252,43 +91,5 @@
       menu.classList.toggle('hidden');
     });
   </script>
-
-
-  <!-- Servicios Profesionales -->
-  <section class="py-16 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-extrabold text-gray-900 mb-8">Servicios profesionales</h2>
-      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <!-- Tfactura -->
-        <div class="bg-gray-100 p-6 rounded-lg shadow">
-          <img src="https://i.imgur.com/h5iSm0z.png" alt="Tfactura.io logo" class="h-12 mb-4">
-          <h3 class="text-xl font-semibold mb-2">Tfactura.io</h3>
-          <p class="text-gray-700 mb-4">Somos partners oficiales. Brindamos implementación, capacitación y asesoría.</p>
-          <span class="inline-block bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Consultar precios</span>
-        </div>
-        <!-- Gestión Center -->
-        <div class="bg-gray-100 p-6 rounded-lg shadow">
-          <img src="https://i.imgur.com/4nG5uRo.png" alt="Gestión Center logo" class="h-12 mb-4">
-          <h3 class="text-xl font-semibold mb-2">Gestión Center Cloud</h3>
-          <p class="text-gray-700 mb-4">Implementación, configuración y capacitación del sistema para empresas.</p>
-          <span class="inline-block bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">Consultar precios</span>
-        </div>
-        <!-- Micrositios tipo Linktree -->
-        <div class="bg-gray-100 p-6 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2">Micrositios con tus links</h3>
-          <p class="text-gray-700 mb-4">Diseñamos micrositios estilo link.tree con tu branding y estructura personalizada.</p>
-          <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Desde $6.000</span>
-        </div>
-        <!-- Webs gratuitas para ONGs -->
-        <div class="bg-gray-100 p-6 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2">Sitios web gratuitos</h3>
-          <p class="text-gray-700 mb-4">Diseñamos sitios institucionales sin costo para organizaciones sociales y voluntariados.</p>
-          <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">100% Gratis</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
 </body>
 </html>
-
