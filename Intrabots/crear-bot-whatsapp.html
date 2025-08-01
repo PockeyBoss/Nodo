@@ -122,16 +122,13 @@
             qaPairs,
           };
 
-          const response = await fetch(
-            'https://nodosm.com/backend_intrabots_clean.py',
-            {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify(data),
-            }
-          );
+          const response = await fetch('https://nodosm.com/127.0.0.1:5000/', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+          });
 
           if (response.ok) {
             document.getElementById('result').classList.remove('hidden');
