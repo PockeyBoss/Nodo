@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crear Bot | IntraBots</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+  <body
+    class="bg-gradient-to-br from-blue-600 to-purple-700 text-gray-900 font-sans min-h-screen flex items-center justify-center"
+  >
+    <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-xl">
+      <div class="text-center mb-6">
+        <img
+          src="/assets/logos/logo.png"
+          alt="IntraBots Logo"
+          class="mx-auto w-48 mb-4"
+        />
+        <h1 class="text-3xl font-bold text-gray-800">Crear mi Bot</h1>
+        <p class="text-gray-600 text-sm">
+          Completá los datos y generaremos tu bot automáticamente.
+        </p>
+      </div>
+      <form id="botForm">
+        <label class="block mb-2 font-semibold">Tipo de bot</label>
+        <select name="tipo" class="w-full p-2 border rounded mb-4" required>
+          <option value="">Seleccionar...</option>
+          <option value="atencion">Atención al cliente</option>
+          <option value="turnos">Turnos</option>
+          <option value="pedidos">Pedidos</option>
+          <option value="educativo">Educativo</option>
+          <option value="encuestas">Encuestas</option>
+          <option value="seguimiento">Seguimiento</option>
+        </select>
+
+        <label class="block mb-2 font-semibold">Nombre del bot</label>
+        <input
+          type="text"
+          name="nombre"
+          class="w-full p-2 border rounded mb-4"
+          required
+        />
+
+        <label class="block mb-2 font-semibold">Mensaje de bienvenida</label>
+        <textarea
+          name="mensaje"
+          class="w-full p-2 border rounded mb-4"
+          rows="3"
+          required
+        ></textarea>
+
+        <label class="block mb-2 font-semibold"
+          >Link de destino (WhatsApp, tienda, etc.)</label
+        >
+        <input
+          type="url"
+          name="link"
+          class="w-full p-2 border rounded mb-4"
+          required
+        />
+
+        <label class="block mb-2 font-semibold">Tu email o WhatsApp</label>
+        <input
+          type="text"
+          name="contacto"
+          class="w-full p-2 border rounded mb-4"
+          required
+        />
+
+        <button
+          type="submit"
+          class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+        >
+          Generar mi bot
+        </button>
+      </form>
+      <p class="text-sm text-gray-500 mt-6 text-center">
+        Recibirás tu bot personalizado automáticamente tras completar el
+        formulario.
+      </p>
+    </div>
+
+    <script>
+      document
+        .getElementById('botForm')
+        .addEventListener('submit', function (event) {
+          event.preventDefault();
+          alert('¡Formulario enviado! Tu bot será generado automáticamente.');
+          // Acá se conectará con Google Apps Script o backend de automatización
+        });
+    </script>
+  </body>
+</html>
